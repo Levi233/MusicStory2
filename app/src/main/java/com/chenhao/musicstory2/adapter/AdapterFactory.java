@@ -63,6 +63,7 @@ public abstract class AdapterFactory<T> extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
+        // 1111111111111111111111111111111111
         return mAdapters.get(i).getView(i, view, viewGroup);
     }
 
