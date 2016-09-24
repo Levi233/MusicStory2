@@ -31,6 +31,7 @@ public abstract class AdapterFactory<T> extends BaseAdapter {
 
     protected final void addAdapter(SingleViewAdapter adapter) {
         if (adapter != null) {
+            // ----------------------
             mAdapters.add(adapter);
         }
     }
