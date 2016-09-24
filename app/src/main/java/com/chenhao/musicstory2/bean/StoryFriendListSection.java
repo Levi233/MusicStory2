@@ -1,7 +1,5 @@
 package com.chenhao.musicstory2.bean;
 
-import android.support.v7.view.menu.MenuView;
-
 /**
  * Created by chenhao on 2016/8/24.
  */
