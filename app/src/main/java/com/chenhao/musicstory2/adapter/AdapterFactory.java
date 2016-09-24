@@ -26,19 +26,20 @@ public abstract class AdapterFactory<T> extends BaseAdapter {
         this.mAdapters = new ArrayList<SingleViewAdapter>();
         buildAdapters(t);
     }
+
     protected abstract void buildAdapters(T t);
 
-    protected final void addAdapter(SingleViewAdapter adapter){
-        if (adapter != null){
+    protected final void addAdapter(SingleViewAdapter adapter) {
+        if (adapter != null) {
             mAdapters.add(adapter);
         }
     }
 
-    public Context getContext(){
+    public Context getContext() {
         return mContext;
     }
 
-    public Handler getHandler(){
+    public Handler getHandler() {
         return mHandler;
     }
 
@@ -58,8 +59,8 @@ public abstract class AdapterFactory<T> extends BaseAdapter {
     }
 
     @Override
-    public  View getView(int i, View view, ViewGroup viewGroup) {
-        return mAdapters.get(i).getView(i,view,viewGroup);
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        return mAdapters.get(i).getView(i, view, viewGroup);
     }
 
     @Override
