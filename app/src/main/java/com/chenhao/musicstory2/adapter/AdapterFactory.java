@@ -2,6 +2,7 @@ package com.chenhao.musicstory2.adapter;
 
 import android.content.Context;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -29,9 +30,10 @@ public abstract class AdapterFactory<T> extends BaseAdapter {
 
     protected abstract void buildAdapters(T t);
 
-    protected final void addAdapter(SingleViewAdapter adapter) {
-        if (adapter != null) {
+    protected final void addAdapter(SingleViewAdapter adapter){
+        if (adapter != null){
             // ----------------------
+            Log.e("chenhaolog","冲突");
             mAdapters.add(adapter);
         }
     }
